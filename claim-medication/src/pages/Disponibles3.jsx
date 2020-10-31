@@ -1,7 +1,13 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import swal from "sweetalert";
+import { Link } from "react-router-dom";
 
 export default class Disponibles3 extends Component {
   render() {
+    const mostrarAlerta = () => {
+      swal("La notificación te llegará al correo");
+    };
     return (
       <center>
         <div className="container">
@@ -29,6 +35,20 @@ export default class Disponibles3 extends Component {
             <strong>º</strong>Drogueria la rebaja 6:30 am - 7:30 pm <br />
             <strong>º</strong>Drogueria Cafam 8:30 am - 8:30 pm <br />
           </p>
+        </div>
+        <h4>
+          {" "}
+          <strong> ¿Deseas recibir notificaciones?</strong>
+        </h4>
+        <div>
+          <Button variant="primary" size="sm" onClick={() => mostrarAlerta()}>
+            Si
+          </Button>
+          <Link to="/Inicio" className="nav-link">
+            <Button variant="secondary" size="sm">
+              No
+            </Button>
+          </Link>
         </div>
       </center>
     );
