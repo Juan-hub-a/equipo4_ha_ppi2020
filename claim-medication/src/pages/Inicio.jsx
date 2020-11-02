@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Style/inicioStyle.css";
+import { Link } from "react-router-dom";
 
 export default class Inicio extends Component {
   render() {
@@ -68,9 +69,11 @@ export default class Inicio extends Component {
             <br />
           </p>
           <center>
-            <form action="https://lyhiu.csb.app/Consultar">
-              <input type="submit" value="Consultar medicamentos" />
-            </form>
+            <Link to="/Consultar2" className="nav-link">
+              <form action="https://lyhiu.csb.app/Consultar">
+                <input type="submit" value="Consultar medicamentos" />
+              </form>
+            </Link>
           </center>
           <br />
           <br />

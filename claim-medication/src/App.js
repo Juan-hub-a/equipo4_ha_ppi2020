@@ -10,6 +10,7 @@ import BasededatosP from "./pages2/BasededatosP";
 import Inicio1 from "./pages2/Inicio1";
 import Login1 from "./pages2/Login1";
 import Consultar from "./pages/Consultar";
+import Consultar2 from "./pages2/Consultar2";
 import Layout from "./Layout";
 import Medicamento from "./pages/Medicamento";
 import Disponibles from "./pages/Disponibles";
@@ -32,6 +33,8 @@ export default function App() {
         <Route exact path="/Inicio1" component={Inicio1} />
         <Route exact path="/Login1" component={Login1} />
         <Route exact path="/Formulas" component={Formulas} />
+        <Route exact path="/Consultar2" component={Consultar2} />
+
         <Layout>
           <Route exact path="/Inicio" component={Inicio} />
           <Route exact path="/Nosotros" component={Nosotros} />
