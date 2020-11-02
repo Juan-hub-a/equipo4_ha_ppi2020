@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import "./Style/preingresoStyles.css"
+import "./Style/preingresoStyles.css";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
@@ -10,16 +10,14 @@ export default class Preingreso extends Component {
       <>
         <br />
         <Link to="/Login2" className="nav-link">
-          <Button variant="primary" size="lg" active>
-            USUARIO
-          </Button>{" "}
+          <button className="button-5">USUARIO</button>
         </Link>
         <br />
         <br />
         <Link to="/Login3" className="nav-link">
-          <Button variant="primary" size="lg" active>
+          <button className="button-5" Activate>
             ADMINISTRADOR
-          </Button>{" "}
+          </button>
         </Link>
       </>
     );

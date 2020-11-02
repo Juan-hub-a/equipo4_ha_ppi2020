@@ -10,7 +10,7 @@ export default class preingreso1 extends Component {
         <br />
         <br />
         <br />
-        <div className="container">
+        <div className="container-button">
           <div className="row d-flex justify-content-center align-items-center preingreso-container">
             <div>
               <div className="border p-3">

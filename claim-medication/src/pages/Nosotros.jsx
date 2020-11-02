@@ -1,7 +1,39 @@
 import React, { Component } from "react";
 //import Carousel from "../components/Carousel";
+import Card from "../components/Card";
+
+const data = [
+  {
+    id: 1,
+    img:
+      "https://github.com/Juan-hub-a/equipo4_ha_ppi2020/blob/master/sergio.jpeg?raw=true",
+    info:
+      "SERGIO DAVID MOSQUERA MORENO. CORREO:sedamomo123@gmail.com. CELULAR:3104144655"
+  },
+  {
+    id: 2,
+    img:
+      "https://github.com/Juan-hub-a/equipo4_ha_ppi2020/blob/master/melody.jpeg?raw=true",
+    info:
+      "VALENTINA MELODY PEÑA CORREDOR. CORREO:valentinamelodycorredor@gmail.com CELULAR:3003295894"
+  },
+  {
+    id: 3,
+    img:
+      "https://github.com/Juan-hub-a/equipo4_ha_ppi2020/blob/master/juan.jpeg?raw=true",
+    info:
+      "JUAN MANUEL MONTOYA VILLEGAS. CORREO:juanmanuel16montoya@gmail.com CELULAR:310 3987178"
+  }
+];
 
 export default class Nosotros extends Component {
+  constructor() {
+    super();
+    this.state = {
+      data
+    };
+  }
+
   render() {
     return (
       <>
@@ -53,44 +85,19 @@ export default class Nosotros extends Component {
           </p>
           <br />
           <br />
+
           <h2 align="left">
             <u>
-              <strong>Contactanos</strong>
+              <center>
+                <strong>Contactanos</strong>
+              </center>
             </u>{" "}
           </h2>
-          <table>
-            <li>
-              <strong> Melody Valentina Peña Corredor</strong>
-            </li>
-            <p>
-              <strong>Correo:</strong> valentinamelodycorredor@gmail.com <br />
-              <strong>Celular:</strong> 300 3295894
-            </p>
-            <li>
-              <strong> Sergio David Mosquera Moreno</strong>
-            </li>
-            <p>
-              <strong>Correo:</strong> sedamomo123@gmail.com
-              <br />
-              <strong>Celular:</strong> 310 4144655
-            </p>
-            <li>
-              <strong> Juan Manuel montoya Villegas</strong>
-            </li>
-            <p>
-              <strong>Correo:</strong> juanmanuel16montoya@gmail.com
-              <br />
-              <strong>Celular:</strong> 310 3987178
-            </p>
-
-            <li>
-              <strong> Claim medication</strong>
-            </li>
-            <p>
-              <strong>Correo:</strong> claimmedication@gmail.com
-              <br />
-            </p>
-          </table>
+        </div>
+        <div className="container">
+          <div className="row">
+            <Card data={this.state.data} />
+          </div>
         </div>
       </>
     );
