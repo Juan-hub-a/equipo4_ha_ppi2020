@@ -14,7 +14,7 @@ import Consultar2 from "./pages2/Consultar2";
 import Layout from "./Layout";
 import Medicamento from "./pages/Medicamento";
 import Disponibles from "./pages/Disponibles";
-import Pqr from "./pages/Pqr";
+import Cam from "./pages/Cam";
 import Login3 from "./pages2/Login3/Login3";
 import Formulas from "./pages/Formulas";
 import Disponibles2 from "./pages/Disponibles2";
@@ -44,7 +44,7 @@ export default function App() {
           <Route exact path="/Disponibles" component={Disponibles} />
           <Route exact path="/Disponibles2" component={Disponibles2} />
           <Route exact path="/Disponibles3" component={Disponibles3} />
-          <Route exact path="/Pqr" component={Pqr} />
+          <Route exact path="/Cam" component={Cam} />
         </Layout>
       </Switch>
     </BrowserRouter>

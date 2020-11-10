@@ -38,7 +38,7 @@ export default class Consultar extends Component {
             </form>
           </Link>
           <br />
-          <Link to="/Pqr" className="nav-link">
+          <Link to="/Cam" className="nav-link">
             <form action="">
               <input type="submit" value="Leer formula de los medicamentos" />
             </form>
