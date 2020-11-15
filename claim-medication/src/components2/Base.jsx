@@ -1,16 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Base.css";
-import  swal from "sweetalert"
+import swal from "sweetalert";
 
 export default class Base extends Component {
   constructor() {
     super();
-    this.state = {
-      
-    };
+    this.state = {};
   }
-  
 
   handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +17,7 @@ export default class Base extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const values = JSON.stringify(this.state);
-    swal ("Los datos han sido guardados con éxito..", values);
+    swal("Los datos han sido guardados con éxito..", values);
   };
 
   render() {
@@ -57,10 +54,9 @@ export default class Base extends Component {
             value={Horario}
             onChange={this.handleChange}
           />
-        
         </div>
         <div className="form-group">
-          <label>Ingresar direccíon de la farmacia</label>
+          <label>Ingresar dirección de la farmacia</label>
           <br />
           <input
             type="Dirección "
@@ -69,13 +65,12 @@ export default class Base extends Component {
             onChange={this.handleChange}
           />
         </div>
-        
-          <input
-            type="submit"
-            value="Subir Información"
-            className="btn btn-primary"
-          />
-        
+
+        <input
+          type="submit"
+          value="Subir Información"
+          className="btn btn-primary"
+        />
       </form>
     );
   }

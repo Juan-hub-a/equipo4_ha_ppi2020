@@ -40,7 +40,7 @@ export default class Consultar extends Component {
           <br />
           <Link to="/Cam" className="nav-link">
             <form action="">
-              <input type="submit" value="Leer formula de los medicamentos" />
+              <input type="submit" value="Leer fórmula de los medicamentos" />
             </form>
           </Link>
         </center>

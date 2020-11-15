@@ -18,7 +18,7 @@ export default class Inicio extends Component {
           <br />
           <h2>
             <strong>
-              <u> Objetivo Especifico</u>
+              <u> Objetivo Específico</u>
             </strong>
           </h2>
           <p>

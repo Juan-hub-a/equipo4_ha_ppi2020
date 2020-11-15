@@ -53,14 +53,14 @@ export default class Preguntas extends Component {
         <table>
           <ul class="list-group">
             <li>
-              <strong>¿Quienes manejan la app?</strong>
+              <strong>¿Quiénes manejan la app?</strong>
               <br />
               La app la manejan los administradores y los creadores de la app,
               también la manejan los asociados de ella.
             </li>
             <br />
             <li>
-              <strong>¿Cada cuanto actualizan la app?</strong>
+              <strong>¿Cada cuánto actualizan la app?</strong>
               <br />
               La app se actualizara cada que hay información nueva o
               medicamentos nuevos para ingresar, se puede decir que se
@@ -68,7 +68,7 @@ export default class Preguntas extends Component {
             </li>
             <br />
             <li>
-              <strong>¿Donde puedo raclamar los medicamentos?</strong>
+              <strong>¿Dónde puedo raclamar los medicamentos?</strong>
               <br />
               Los medicamentos los podrás reclamar en la farmacia que se te
               muestre donde esta disponible y cual te queda cercana.

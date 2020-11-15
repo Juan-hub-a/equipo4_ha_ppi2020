@@ -42,7 +42,7 @@ export default class Disponibles3 extends Component {
         </h4>
         <div>
           <Button variant="primary" size="sm" onClick={() => mostrarAlerta()}>
-            Si
+            Sí
           </Button>
           <Link to="/Inicio" className="nav-link">
             <Button variant="secondary" size="sm">

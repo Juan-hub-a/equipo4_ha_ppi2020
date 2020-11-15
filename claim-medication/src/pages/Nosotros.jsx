@@ -57,7 +57,7 @@ export default class Nosotros extends Component {
           </h2>
           <h2 align="left">
             <u>
-              <strong>Vision</strong>
+              <strong>Visión</strong>
             </u>{" "}
           </h2>
           <p>
@@ -89,7 +89,7 @@ export default class Nosotros extends Component {
           <h2 align="left">
             <u>
               <center>
-                <strong>Contactanos</strong>
+                <strong>Contáctanos</strong>
               </center>
             </u>{" "}
           </h2>
