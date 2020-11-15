@@ -1,12 +1,22 @@
 import React, { Component } from "react";
-import QrReader from "react-qr-reader";
-import Button from "react-bootstrap/Button";
-import "./Style/PqrStyles.css";
-import { Link } from "react-router-dom";
+import QrReader from "react-qr-scanner";
 
-export default class Test extends Component {
-  state = {
-    result: "No result"
+export default function App() {
+  return <Test />;
+}
+
+class Test extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      delay: 100,
+      result: "No result"
+    };
+  }
+
+  saludo = () => {
+    console.log(this.state.result);
+    window.open(this.state.result, "_blank");
   };
 
   handleScan = (data) => {
@@ -14,30 +24,29 @@ export default class Test extends Component {
       this.setState({
         result: data
       });
+      this.saludo();
     }
   };
-  handleError = (err) => {
+
+  handleError(err) {
     console.error(err);
-  };
+  }
+
   render() {
+    const previewStyle = {
+      height: 240,
+      width: 320
+    };
+
     return (
       <div>
-        <br />
         <QrReader
-          delay={300}
+          delay={this.state.delay}
+          style={previewStyle}
           onError={this.handleError}
           onScan={this.handleScan}
-          style={{ width: "100%" }}
         />
         <p>{this.state.result}</p>
-        <center>
-          <Link to="/Formulas" className="nav-link">
-            <div className="boton">
-              <Button as="input" type="INGRESAR" value="SIGUIENTE" />
-              {""}
-            </div>
-          </Link>
-        </center>
       </div>
     );
   }
